@@ -5,12 +5,6 @@
     include '../skripte/datum_format.php';
     define("UPLPATH", "../images/");
 
-    $sql = "SELECT * FROM clanci";
-    if(!($result = mysqli_query($dbc, $sql)))  {
-        mysqli_close($dbc);
-        die("Neuspiješan dohvat podataka");
-    }
-
     $pokusaj_prijave = false;
     if ($_SERVER['REQUEST_METHOD'] == 'POST') {
         if (isset($_POST['update'])) {
@@ -91,6 +85,13 @@
 
     if($admin_prijavljen) {
         $msg = "Imate administratorske ovlasti.";
+
+        // Dohvati podatke o člancima za administriranje
+        $sql = "SELECT * FROM clanci";
+        if(!($result = mysqli_query($dbc, $sql)))  {
+            mysqli_close($dbc);
+            die("Neuspiješan dohvat podataka");
+        }
     }
     elseif ($korisnik_prijavljen) {
         $msg = "Nažalost nemate pravo na administriranje sadržaja.";
