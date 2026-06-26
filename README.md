@@ -3,6 +3,7 @@
 <ul>
   <li>Sadržaj repozitorija smjestiti u <code>/htdocs</code> direktorij <b>XAMPP-a</b></li>
   <li>Napraviti import baze u <b>phpMyAdminu</b></li>
+  <li>Pristupiti aplikaciji preko **localhost-a** u pregledniku</li>
 </ul>
 <h3>Administratorski račun:</h3>
 <ul>
