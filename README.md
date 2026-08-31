@@ -1,4 +1,6 @@
 <h1>Projekt - <i>Programiranje Web Aplikacija</i></h1>
+<h3>Demo</h3>
+Poveznica na video demonstraciju korištenja stranice: https://youtu.be/1topn3giY_A
 <h3>Pokretanje aplikacije</h3>
 <ul>
   <li>Sadržaj repozitorija smjestiti u <code>/htdocs</code> direktorij <b>XAMPP</b>-a</li>
